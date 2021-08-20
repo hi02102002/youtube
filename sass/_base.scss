@@ -10,6 +10,7 @@
    --line: #e5e5e5;
    --height-header: 5.6rem;
    --width-sidebar: 24rem;
+   --width-sidebar-hidden: 7.2rem;
 }
 *,
 *::before,
@@ -43,4 +44,17 @@ ol {
 
 span {
    display: block;
+}
+
+::-webkit-scrollbar {
+   width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+   background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--border);
+   border-radius: 1rem;
 }
