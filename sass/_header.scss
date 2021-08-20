@@ -1,0 +1,105 @@
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1.2rem 2.4rem;
+   background-color: var(--bg-main);
+
+   &__col,
+   .search-area,
+   &__nav {
+      display: flex;
+      align-items: center;
+   }
+
+   &__col:nth-child(2) {
+      flex: 1;
+      width: 100%;
+      max-width: 63.5rem;
+   }
+
+   &-col:last-child {
+      flex-shrink: 0;
+   }
+
+   &__toggle {
+      margin-right: 2.4rem;
+      cursor: pointer;
+   }
+
+   .search-area {
+      width: 100%;
+      height: 2.9rem;
+      margin: 2.4rem;
+      .icon {
+         cursor: pointer;
+         width: 6.5rem;
+         height: inherit;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: var(--gray-2);
+         border: 1px solid var(--border);
+         border-radius: 0 2px 2px 0;
+      }
+   }
+
+   &__search {
+      width: 100%;
+      padding: 0.5rem 1.2rem;
+      align-self: stretch;
+      border: 1px solid var(--border);
+      outline: none;
+      border-radius: 2px 0 0 2px;
+      font-family: inherit;
+      color: var(--gray);
+      font-size: 1.6rem;
+      line-height: 150%;
+      outline: none;
+   }
+   &__profile {
+      flex-shrink: 0;
+      display: flex;
+      cursor: pointer;
+      &-img {
+         flex-shrink: 0;
+         width: 3.2rem;
+         height: 3.2rem;
+         object-fit: cover;
+         border-radius: 50%;
+      }
+   }
+
+   &__nav {
+      margin-right: 2.4rem;
+   }
+
+   &__link {
+      position: relative;
+      &:not(:last-child) {
+         margin-right: 2.4rem;
+      }
+
+      &-tooltip {
+         position: absolute;
+         left: 50%;
+         top: calc(100% + 1.2rem);
+         transform: translateX(-50%);
+         white-space: nowrap;
+         padding: 0.8rem;
+         font-size: 1rem;
+         font-weight: 500;
+         color: #fff;
+         border-radius: 0.2rem;
+         background-color: rgba(0, 0, 0, 0.6);
+         opacity: 0;
+         visibility: hidden;
+         transition: all 0.2s ease-in;
+      }
+
+      &:hover .header__link-tooltip {
+         opacity: 1;
+         visibility: visible;
+      }
+   }
+}

@@ -1,0 +1,30 @@
+.container-content {
+   max-width: 126.4rem;
+}
+
+.page {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+}
+
+.header {
+   height: var(--height-header);
+   background-color: aqua;
+}
+
+.main {
+   flex-grow: 1;
+   display: flex;
+}
+
+.sidebar {
+   width: 100%;
+   max-width: var(--width-sidebar);
+   background-color: blue;
+}
+
+.content {
+   flex-grow: 1;
+   background-color: brown;
+}
