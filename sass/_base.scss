@@ -8,6 +8,7 @@
    --main-text-color: #030303;
    --border: #cccccc;
    --line: #e5e5e5;
+   --line-1: #d3d1d1;
    --height-header: 5.6rem;
    --width-sidebar: 24rem;
    --width-sidebar-hidden: 7.2rem;
@@ -23,8 +24,12 @@
 html {
    font-size: 62.5%;
    font-family: "Roboto", sans-serif;
-   color: var(--main-text-color);
    box-sizing: border-box;
+}
+
+body {
+   color: var(--main-text-color);
+   background-color: var(--bg-main);
 }
 
 video,

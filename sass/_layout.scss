@@ -6,7 +6,7 @@
    display: flex;
    flex-direction: column;
    height: 100vh;
-   overflow: hidden;
+   width: 100vw;
 }
 
 .header {
@@ -17,15 +17,20 @@
    flex-grow: 1;
    display: flex;
    padding-top: var(--height-header);
+   overflow-x: hidden;
+   overflow-y: auto;
 }
 
 .sidebar {
    width: 100%;
    max-width: var(--width-sidebar);
-   overflow-y: auto;
 }
 
 .content {
-   flex-grow: 1;
-   background-color: brown;
+   flex: 1;
+   background-color: var(--bg-main);
+   max-width: 225.6rem;
+   width: 100%;
+   margin: 0 auto;
+   position: relative;
 }
